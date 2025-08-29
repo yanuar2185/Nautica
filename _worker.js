@@ -3,7 +3,7 @@ import { connect } from "cloudflare:sockets";
 // import { Buffer } from "node:buffer";
 
 // Variables
-const rootDomain = "yanuar.workers.dev"; // Ganti dengan domain utama kalian
+const rootDomain = "yanuar"; // Ganti dengan domain utama kalian
 const serviceName = "vps"; // Ganti dengan nama workers kalian
 const apiKey = "Qotg4054mlC2rshiNEtS-UvE61xUNsM_DEgLb-kTb"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
 const apiEmail = "ardian.syahputra9655@gmail.com"; // Ganti dengan email yang kalian gunakan
