@@ -1,10 +1,20 @@
-name = "v2ray"
-main = "_worker.js"
-compatibility_date = "2024-09-23"
-compatibility_flags = ["nodejs_compat_v2"]
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "WORKER-NAME",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-04",
+  "observability": {
+    "enabled": true
+  },
 
-[unsafe.metadata.observability]
-enabled = true
-
-[observability.logs]
-enabled = true
+  // Add this to your wrangler.jsonc
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "3a5764d219e944849092b98d9e284d2d",
+      
+      // Optional: preview_id used when running `wrangler dev` for local dev
+      "preview_id": "<ID_OF_PREVIEW_KV_NAMESPACE_FOR_LOCAL_DEVELOPMENT>"
+    }
+  ]
+}
