@@ -1,16 +1,7 @@
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "WORKER-NAME",
-  "main": "src/index.ts",
-  "compatibility_date": "2025-02-04",
-  "observability": {
-    "enabled": true
-  },
-
   // Add this to your wrangler.jsonc
-  "kv_namespaces": [
+  "vpn": [
     {
-      "binding": "KV",
+      "binding": "v2ray",
       "id": "3a5764d219e944849092b98d9e284d2d",
       
       // Optional: preview_id used when running `wrangler dev` for local dev
